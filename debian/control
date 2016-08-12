@@ -1,0 +1,16 @@
+Source: libnet-cidr-perl
+Section: perl
+Priority: optional
+Build-Depends-Indep: perl (>= 5.6.0-16)
+Build-Depends: debhelper (>= 9)
+Maintainer: Bart Martens <bartm@debian.org>
+Standards-Version: 3.9.8
+Homepage: http://search.cpan.org/dist/Net-CIDR/
+
+Package: libnet-cidr-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}
+Description: Manipulate IPv4/IPv6 netblocks in CIDR notation
+ The Net::CIDR package contains functions that manipulate lists of
+ IP netblocks expressed in CIDR notation. The Net::CIDR functions
+ handle both IPv4 and IPv6 addresses.

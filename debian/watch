@@ -1,0 +1,3 @@
+version=3
+http://search.cpan.org/dist/Net-CIDR/ \
+.*/Net-CIDR-(.*)\.tar\.gz

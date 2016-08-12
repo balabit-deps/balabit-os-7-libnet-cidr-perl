@@ -1,0 +1,10 @@
+--- ../orig/libnet-cidr-perl-0.14/CIDR.pm	2010-06-27 13:40:11.000000000 +0000
++++ ./CIDR.pm	2011-02-20 15:43:00.000000000 +0000
+@@ -427,6 +427,7 @@
+     ($isipv6, $ip)=_ipv6to4($iparg);
+ 
+     my @ips= split (/\.+/, $ip);
++    for( my $i = $#ips + 1 ; $i < 4 ; $i++ ) { $ips[$i] = 0; }
+ 
+     grep {
+ 	croak "$_, in $iparg, is not a byte" unless $_ >= 0 && $_ <= 255 && $_ =~ /^[0-9]+$/;
